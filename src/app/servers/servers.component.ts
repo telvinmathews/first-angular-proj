@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   serverName = 'Test server';
   username = 'username';
   serverCreated = false;
+  servers = ['Testserver', 'Testserver'];
 
 
   constructor() {

@@ -6,11 +6,9 @@
 <button class="btn btn-success" [disabled]="!allowServer" (click)="onCreateServer()">Add Server</button>
 <p>{{allowServer}}</p>
 <!-- <p style="padding: 10px;">{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated" >Server was created, server name is {{ serverName }}</p>
+<p *ngIf="serverCreated;" >Server was created, server name is {{ serverName }}</p>
 <hr>
-<app-server></app-server>
-<app-server></app-server>
-
+<app-server *ngFor="" ></app-server>
 <!-- <input type="text"
 [(ngModel)]="username"
 >
