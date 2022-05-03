@@ -1,1 +1,11 @@
+.pTag {
+  padding: 10px;
+  padding-left: 0px;
+}
+.noPad {
+  padding-left: 0;
+}
 
+.whiteText {
+  color: white;
+}

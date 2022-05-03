@@ -1,17 +1,35 @@
 <!-- <label for=""></label>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
 
-<input type="text" class="form-control" [(ngModel)]="serverName">
+<!-- <input type="text" class="form-control" [(ngModel)]="serverName">
 <p>{{ serverName }}</p>
 <button class="btn btn-success" [disabled]="!allowServer" (click)="onCreateServer()">Add Server</button>
-<p>{{allowServer}}</p>
+<p>{{allowServer}}</p> -->
 <!-- <p style="padding: 10px;">{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated;" >Server was created, server name is {{ serverName }}</p>
+<!-- <p *ngIf="serverCreated;" >Server was created, server name is {{ serverName }}</p>
 <hr>
-<app-server *ngFor="" ></app-server>
+<app-server *ngFor="let server of servers" ></app-server> -->
 <!-- <input type="text"
 [(ngModel)]="username"
 >
 <p>{{username}}</p>
 
 <button class="btn btn-warning" [disabled]="username === ''" (click)="usernameRest()">Click Me</button> -->
+
+<button class="btn btn-info" (click)="displayDetails()">Display Details</button>
+<div class="container noPad">
+  <div class="col-xs-6 col-sm-4 pTag">
+    <p>{{paragraph}}</p>
+  </div>
+</div>
+<div>
+  <ul>
+    <li
+     *ngFor="let number of numbers"
+     [ngStyle]="{backgroundColor: number >= 5 ? 'blue': 'transparent'}"
+     [ngClass]="{'whiteText': number >= 5}"
+    >
+      {{number}}
+    </li>
+  </ul>
+</div>
